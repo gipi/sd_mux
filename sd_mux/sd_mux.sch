@@ -1,37 +1,5 @@
-EESchema Schematic File Version 2
-LIBS:sd_mux-rescue
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
-LIBS:sd_mux_library
-LIBS:sd_mux-cache
-EELAYER 25 0
+EESchema Schematic File Version 4
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -46,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Micro_SD_Card_Det J1
+L sd_mux-rescue:Micro_SD_Card_Det J1
 U 1 1 5A0DE1ED
 P 8300 3400
 F 0 "J1" H 7650 4100 50  0000 C CNN
@@ -57,7 +25,7 @@ F 3 "" H 8300 3500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SN74CBT3257DR IC1
+L sd_mux_library:SN74CBT3257DR IC1
 U 1 1 5A0DDE4F
 P 5450 2400
 F 0 "IC1" H 5450 2250 60  0000 C CNN
@@ -68,7 +36,7 @@ F 3 "" H 5300 2250 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SN74CBT3257DR IC2
+L sd_mux_library:SN74CBT3257DR IC2
 U 1 1 5A0DDEBA
 P 5450 4000
 F 0 "IC2" H 5450 3850 60  0000 C CNN
@@ -79,7 +47,7 @@ F 3 "" H 5300 3850 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Conn_01x12 J2
+L sd_mux-rescue:Conn_01x12 J2
 U 1 1 5A0DE162
 P 2250 2350
 F 0 "J2" H 2250 2950 50  0000 C CNN
@@ -90,7 +58,7 @@ F 3 "" H 2250 2350 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Conn_01x12 J3
+L sd_mux-rescue:Conn_01x12 J3
 U 1 1 5A0DE319
 P 2250 3950
 F 0 "J3" H 2250 4550 50  0000 C CNN
@@ -101,7 +69,7 @@ F 3 "" H 2250 3950 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L GND #PWR01
+L power1:GND #PWR01
 U 1 1 5A0DE7CC
 P 6350 2900
 F 0 "#PWR01" H 6350 2650 50  0001 C CNN
@@ -112,7 +80,7 @@ F 3 "" H 6350 2900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR02
+L power1:GND #PWR02
 U 1 1 5A0DE82E
 P 6550 5000
 F 0 "#PWR02" H 6550 4750 50  0001 C CNN
@@ -123,7 +91,7 @@ F 3 "" H 6550 5000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR03
+L power1:GND #PWR03
 U 1 1 5A0DE90A
 P 8050 5850
 F 0 "#PWR03" H 8050 5600 50  0001 C CNN
@@ -134,7 +102,7 @@ F 3 "" H 8050 5850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR04
+L power1:GND #PWR04
 U 1 1 5A0DEA23
 P 7300 4050
 F 0 "#PWR04" H 7300 3800 50  0001 C CNN
@@ -145,7 +113,7 @@ F 3 "" H 7300 4050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR05
+L power1:GND #PWR05
 U 1 1 5A0DEA83
 P 9250 3900
 F 0 "#PWR05" H 9250 3650 50  0001 C CNN
@@ -156,7 +124,7 @@ F 3 "" H 9250 3900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L VCC #PWR06
+L power1:VCC #PWR06
 U 1 1 5A0DECC1
 P 6550 3600
 F 0 "#PWR06" H 6550 3450 50  0001 C CNN
@@ -167,7 +135,7 @@ F 3 "" H 6550 3600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L VCC #PWR07
+L power1:VCC #PWR07
 U 1 1 5A0DED29
 P 6350 1950
 F 0 "#PWR07" H 6350 1800 50  0001 C CNN
@@ -178,7 +146,7 @@ F 3 "" H 6350 1950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L VCC #PWR08
+L power1:VCC #PWR08
 U 1 1 5A0DEDB5
 P 8150 5250
 F 0 "#PWR08" H 8150 5100 50  0001 C CNN
@@ -191,7 +159,7 @@ $EndComp
 Text GLabel 7350 5750 0    60   Input ~ 0
 device_select
 $Comp
-L Conn_01x03 J4
+L sd_mux-rescue:Conn_01x03 J4
 U 1 1 5A0DFB80
 P 8350 5750
 F 0 "J4" H 8350 5950 50  0000 C CNN
@@ -206,7 +174,7 @@ device_select
 Text GLabel 5250 4700 0    60   Input ~ 0
 device_select
 $Comp
-L R R1
+L sd_mux-rescue:R R1
 U 1 1 5A0E00B7
 P 7900 5550
 F 0 "R1" V 7980 5550 50  0000 C CNN
@@ -221,7 +189,7 @@ OE
 Text GLabel 5650 4700 2    60   Input ~ 0
 OE
 $Comp
-L R R2
+L sd_mux-rescue:R R2
 U 1 1 5A0E043C
 P 5750 4950
 F 0 "R2" V 5830 4950 50  0000 C CNN
@@ -288,7 +256,7 @@ DAT0_2
 Text GLabel 2800 3450 2    60   Input ~ 0
 DAT1_2
 $Comp
-L GND #PWR09
+L power1:GND #PWR09
 U 1 1 5A0E48B7
 P 2600 4750
 F 0 "#PWR09" H 2600 4500 50  0001 C CNN
@@ -299,7 +267,7 @@ F 3 "" H 2600 4750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L VCC #PWR010
+L power1:VCC #PWR010
 U 1 1 5A0E5053
 P 7650 4900
 F 0 "#PWR010" H 7650 4750 50  0001 C CNN
@@ -310,7 +278,7 @@ F 3 "" H 7650 4900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R3
+L sd_mux-rescue:R R3
 U 1 1 5A0E566E
 P 6950 5000
 F 0 "R3" V 7030 5000 50  0000 C CNN
@@ -321,7 +289,7 @@ F 3 "" H 6950 5000 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R R4
+L sd_mux-rescue:R R4
 U 1 1 5A0E570C
 P 6950 5300
 F 0 "R4" V 7030 5300 50  0000 C CNN
@@ -332,7 +300,7 @@ F 3 "" H 6950 5300 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L GND #PWR011
+L power1:GND #PWR011
 U 1 1 5A0E5B3E
 P 6700 5400
 F 0 "#PWR011" H 6700 5150 50  0001 C CNN
@@ -343,7 +311,7 @@ F 3 "" H 6700 5400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C1
+L sd_mux-rescue:C_Small C1
 U 1 1 5A0E0A40
 P 6350 2100
 F 0 "C1" H 6200 2100 50  0000 L CNN
@@ -354,7 +322,7 @@ F 3 "" H 6350 2100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C2
+L sd_mux-rescue:C_Small C2
 U 1 1 5A0E1230
 P 6550 3700
 F 0 "C2" H 6350 3750 50  0000 L CNN
@@ -365,7 +333,7 @@ F 3 "" H 6550 3700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C3
+L sd_mux-rescue:C_Small C3
 U 1 1 5A0E19BB
 P 6800 3400
 F 0 "C3" H 6900 3450 50  0000 L CNN
@@ -376,7 +344,7 @@ F 3 "" H 6800 3400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L PWR_FLAG #FLG012
+L power1:PWR_FLAG #FLG012
 U 1 1 5A0EEB4C
 P 2500 6250
 F 0 "#FLG012" H 2500 6325 50  0001 C CNN
@@ -387,7 +355,7 @@ F 3 "" H 2500 6250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L PWR_FLAG #FLG013
+L power1:PWR_FLAG #FLG013
 U 1 1 5A0EEB7E
 P 2900 6250
 F 0 "#FLG013" H 2900 6325 50  0001 C CNN
@@ -398,7 +366,7 @@ F 3 "" H 2900 6250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR014
+L power1:GND #PWR014
 U 1 1 5A0EEBB0
 P 2500 6350
 F 0 "#PWR014" H 2500 6100 50  0001 C CNN
@@ -409,7 +377,7 @@ F 3 "" H 2500 6350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L VCC #PWR015
+L power1:VCC #PWR015
 U 1 1 5A0EEBE2
 P 2900 6350
 F 0 "#PWR015" H 2900 6200 50  0001 C CNN
@@ -420,7 +388,7 @@ F 3 "" H 2900 6350 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L LED LED1
+L sd_mux-rescue:LED LED1
 U 1 1 5A0F157B
 P 7350 5000
 F 0 "LED1" H 7350 5100 50  0000 C CNN
@@ -431,7 +399,7 @@ F 3 "" H 7350 5000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED LED2
+L sd_mux-rescue:LED LED2
 U 1 1 5A0F15B8
 P 7350 5300
 F 0 "LED2" H 7350 5400 50  0000 C CNN
@@ -444,7 +412,7 @@ $EndComp
 NoConn ~ 4700 3700
 NoConn ~ 4700 4200
 $Comp
-L R R5
+L sd_mux-rescue:R R5
 U 1 1 5A0F2C39
 P 6300 4650
 F 0 "R5" V 6380 4650 50  0000 C CNN
@@ -455,7 +423,7 @@ F 3 "" H 6300 4650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L PWR_FLAG #FLG016
+L power1:PWR_FLAG #FLG016
 U 1 1 5A0F446F
 P 6600 3300
 F 0 "#FLG016" H 6600 3375 50  0001 C CNN
@@ -468,11 +436,11 @@ $EndComp
 Wire Wire Line
 	6150 2850 6350 2850
 Wire Wire Line
-	6350 2200 6350 2900
+	6350 2200 6350 2850
 Wire Wire Line
 	6550 4450 6150 4450
 Wire Wire Line
-	6800 3500 7400 3500
+	6800 3500 7300 3500
 Wire Wire Line
 	9250 3900 9100 3900
 Wire Wire Line
@@ -500,7 +468,7 @@ Wire Wire Line
 Wire Wire Line
 	7050 2450 6150 2450
 Wire Wire Line
-	6600 3300 7400 3300
+	6600 3300 6800 3300
 Wire Wire Line
 	6950 3300 6950 2550
 Wire Wire Line
@@ -516,9 +484,9 @@ Wire Wire Line
 Wire Wire Line
 	7150 3700 7150 4150
 Wire Wire Line
-	6550 3800 6550 5000
+	6550 3800 6550 4450
 Wire Wire Line
-	7300 3500 7300 4050
+	7300 3500 7300 3800
 Wire Wire Line
 	7400 3800 7300 3800
 Wire Wire Line
@@ -537,12 +505,12 @@ Wire Wire Line
 Wire Wire Line
 	5400 4700 5250 4700
 Wire Wire Line
-	7350 5750 8150 5750
+	7350 5750 7650 5750
 Connection ~ 7900 5750
 Wire Wire Line
 	5650 3100 5500 3100
 Wire Wire Line
-	5500 4700 5650 4700
+	5500 4700 5550 4700
 Wire Wire Line
 	5550 4700 5550 4950
 Wire Wire Line
@@ -550,7 +518,7 @@ Wire Wire Line
 Connection ~ 5550 4700
 Connection ~ 6550 4450
 Wire Wire Line
-	5900 4950 6550 4950
+	5900 4950 6300 4950
 Connection ~ 6550 4950
 Connection ~ 7300 3900
 Wire Wire Line
@@ -612,7 +580,7 @@ Wire Wire Line
 Wire Wire Line
 	8150 5850 8050 5850
 Wire Wire Line
-	8150 5250 8150 5650
+	8150 5250 8150 5300
 Connection ~ 8150 5300
 Wire Wire Line
 	7900 5700 7900 5750
@@ -629,7 +597,7 @@ Wire Wire Line
 Wire Wire Line
 	7200 5300 7100 5300
 Wire Wire Line
-	6700 5000 6700 5400
+	6700 5000 6700 5300
 Wire Wire Line
 	6700 5000 6800 5000
 Wire Wire Line
@@ -655,8 +623,6 @@ Wire Wire Line
 Connection ~ 6300 4950
 Wire Wire Line
 	6300 3950 6300 4500
-Wire Wire Line
-	6800 3300 6800 3300
 Connection ~ 6800 3300
 Wire Wire Line
 	2700 1850 2450 1850
@@ -695,7 +661,7 @@ Wire Wire Line
 Wire Wire Line
 	2500 2400 2700 2400
 Wire Wire Line
-	2600 1950 2600 4750
+	2600 1950 2600 2150
 Wire Wire Line
 	2450 3450 2800 3450
 Wire Wire Line
@@ -733,4 +699,50 @@ Connection ~ 2600 3750
 Wire Wire Line
 	2450 3550 2600 3550
 Connection ~ 2600 3550
+Wire Wire Line
+	7300 3800 7300 3900
+Wire Wire Line
+	7900 5750 8150 5750
+Wire Wire Line
+	5550 4700 5650 4700
+Wire Wire Line
+	6550 4450 6550 4950
+Wire Wire Line
+	6550 4950 6550 5000
+Wire Wire Line
+	7300 3900 7300 4050
+Wire Wire Line
+	8150 5300 8150 5650
+Wire Wire Line
+	6700 5300 6700 5400
+Wire Wire Line
+	7650 5750 7900 5750
+Wire Wire Line
+	6350 2850 6350 2900
+Wire Wire Line
+	6950 3300 7400 3300
+Wire Wire Line
+	7300 3500 7400 3500
+Wire Wire Line
+	6300 4950 6550 4950
+Wire Wire Line
+	6800 3300 6950 3300
+Wire Wire Line
+	2600 2150 2600 2350
+Wire Wire Line
+	2600 2350 2600 2650
+Wire Wire Line
+	2600 2650 2600 2850
+Wire Wire Line
+	2600 2850 2600 3550
+Wire Wire Line
+	2600 4450 2600 4750
+Wire Wire Line
+	2600 3950 2600 4250
+Wire Wire Line
+	2600 4250 2600 4450
+Wire Wire Line
+	2600 3750 2600 3950
+Wire Wire Line
+	2600 3550 2600 3750
 $EndSCHEMATC
